@@ -78,7 +78,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 		fmt.Println("hi there " + function)						//error
 		return nil, nil;
 	} if function == "read" {
-		return t.read(stub, args)
+		return t.Read(stub, args)
 	}
 
 	fmt.Println("query did not find func: " + function)						//error
